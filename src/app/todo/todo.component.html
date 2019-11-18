@@ -1,0 +1,36 @@
+<h1>To Application</h1>
+<div><table class="table">
+  <thead>
+ <tr>
+   <th>
+     Description
+   </th>
+   
+   <th>
+     Target date
+   </th>
+ 
+   <th>
+     Is completed
+   </th>
+ </tr>
+ 
+  </thead>
+ <tbody>
+ 
+   <tr *ngFor="let todolist of todolist">
+     <td>
+         {{todolist.description}}
+     </td>
+     <td>
+         {{todolist.targetDate | date }}
+     </td>
+     <td>
+         {{todolist.done}}
+     </td>
+     
+   </tr>
+ 
+ </tbody>
+ 
+ </table></div>
